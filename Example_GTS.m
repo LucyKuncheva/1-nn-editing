@@ -4,9 +4,6 @@ load Data2D5 % 2D data, 3 classes
 co = [1 0 0;0 1 0;0 0 0]; % colour matrix
 c = 3; % classes
 
-addpath ../Editing
-
-
 cc = edit_closest_to_centroid(Data,Labels); % instances CC
 [gts,~,E] = edit_greedy_tabu_search(Data,Labels); % instances GTS
 
